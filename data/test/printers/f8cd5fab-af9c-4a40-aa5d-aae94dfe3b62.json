@@ -1,0 +1,17 @@
+{
+  "name": "Standard FDM Printer",
+  "vendor": "Generic",
+  "model": "FDM Printer",
+  "bed_size": [
+    200,
+    200
+  ],
+  "max_print_height": 200,
+  "nozzle_diameter": 0.4,
+  "direct_drive": true,
+  "printer_type": "cartesian",
+  "use_klipper": false,
+  "id": "f8cd5fab-af9c-4a40-aa5d-aae94dfe3b62",
+  "created": "2025-03-24T12:37:59.848736",
+  "modified": "2025-03-24T12:37:59.848736"
+}

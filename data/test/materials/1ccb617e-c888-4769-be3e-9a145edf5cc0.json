@@ -1,0 +1,14 @@
+{
+  "name": "Test PETG",
+  "vendor": "Generic",
+  "type": "PETG",
+  "color": "#00FFFF",
+  "diameter": 1.75,
+  "temp_range_min": 230,
+  "temp_range_max": 250,
+  "bed_temp_range_min": 70,
+  "bed_temp_range_max": 85,
+  "id": "1ccb617e-c888-4769-be3e-9a145edf5cc0",
+  "created": "2025-03-24T12:40:44.722200",
+  "modified": "2025-03-24T12:40:44.722200"
+}

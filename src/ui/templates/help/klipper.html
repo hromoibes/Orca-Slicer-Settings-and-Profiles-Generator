@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}Help - Klipper Guide - Orca Slicer Settings Generator{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-3">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Help Topics</h5>
+            </div>
+            <div class="list-group list-group-flush">
+                <a href="{{ url_for('help_index') }}" class="list-group-item list-group-item-action">Help Index</a>
+                <a href="{{ url_for('help_settings') }}" class="list-group-item list-group-item-action">Settings Guide</a>
+                <a href="{{ url_for('help_klipper') }}" class="list-group-item list-group-item-action active">Klipper Guide</a>
+                <a href="{{ url_for('help_printing') }}" class="list-group-item list-group-item-action">3D Printing Guide</a>
+                <a href="{{ url_for('help_about') }}" class="list-group-item list-group-item-action">About</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-9">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">Klipper Guide for SonicPad</h5>
+            </div>
+            <div class="card-body help-content">
+                <h2>Introduction to Klipper</h2>
+                <p>Klipper is a powerful 3D printer firmware that combines the processing power of a general-purpose computer (like your SonicPad running Debian) with one or more microcontrollers (like those in your 3D printer). This unique architecture enables advanced features that can significantly improve print quality and performance.</p>
+                
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i> 
+                    <strong>SonicPad with Debian:</strong> This guide is specifically tailored for users running Klipper on a SonicPad with Debian, as described in the <a href="https://github.com/Jpe230/SonicPad-Debian" target="_blank">SonicPad-Debian GitHub repository</a>.
+                </div>
+                
+                <h2>Klipper Advantages</h2>
+                <p>Klipper offers several advantages over traditional firmware like Marlin:</p>
+                <ul>
+                    <li><strong>High-precision stepping:</strong> Klipper can achieve much higher stepping rates, resulting in smoother motion.</li>
+                    <li><strong>Input shaping:</strong> Reduces ringing and ghosting artifacts in prints.</li>
+                    <li><strong>Pressure advance:</strong> Improves corner quality by managing filament pressure.</li>
+                    <li><strong>Resonance compensation:</strong> Automatically tunes the printer to minimize vibration effects.</li>
+                    <li><strong>Advanced calibration tools:</strong> Makes it easier to fine-tune your printer.</li>
+                </ul>
+                
+                <h2>Klipper-Specific Settings in Orca Slicer</h2>
+                <p>Our AI-powered settings generator takes full advantage of Klipper's capabilities when generating profiles for your SonicPad setup. Here are some key Klipper-specific settings that our system optimizes:</p>
+                
+                <h3>Pressure Advance</h3>
+                <p>Pressure advance helps manage the pressure in the extruder to reduce oozing and improve corner quality. Our AI recommends optimal pressure advance values based on your printer and filament combination.</p>
+                
+                <div class="klipper-config mb-3">
+                    <code>
+[extruder]
+pressure_advance = 0.05  # Value will be optimized for your specific setup
+pressure_advance_smooth_time = 0.040
+                    </code>
+                </div>
+                
+                <h3>Input Shaping</h3>
+                <p>Input shaping reduces ringing (ghosting) artifacts in prints by counteracting printer vibrations. Our system recommends appropriate input shaping parameters based on your printer's mechanical characteristics.</p>
+                
+                <div class="klipper-config mb-3">
+                    <code>
+[input_shaper]
+shaper_freq_x = 60  # Optimized for your printer
+shaper_freq_y = 60  # Optimized for your printer
+shaper_type = mzv   # Can be one of: zv, mzv, ei, 2hump_ei, 3hump_ei
+                    </code>
+                </div>
+                
+                <h3>Acceleration Control</h3>
+                <p>Klipper allows for more precise control over acceleration, which can significantly improve print quality. Our AI balances speed and quality based on your preferences.</p>
+                
+                <div class="klipper-config mb-3">
+                    <code>
+[printer]
+max_accel = 3000             # Maximum acceleration (mm/s^2)
+max_accel_to_decel = 1500    # Maximum acceleration to deceleration
+max_velocity = 300           # Maximum velocity (mm/s)
+square_corner_velocity = 5   # Speed reduction for corners
+                    </code>
+                </div>
+                
+                <h2>Integrating with Your SonicPad</h2>
+                <p>Our Orca Slicer Settings Generator creates profiles that are fully compatible with your SonicPad running Debian and Klipper. Here's how to use them:</p>
+                
+                <ol>
+                    <li><strong>Generate optimized settings</strong> using our AI recommendation engine.</li>
+                    <li><strong>Export the profile</strong> to Orca Slicer format.</li>
+                    <li><strong>Import the profile into Orca Slicer</strong> on your computer.</li>
+                    <li><strong>Slice your models</strong> using the optimized profile.</li>
+                    <li><strong>Transfer the G-code</strong> to your SonicPad for printing.</li>
+                </ol>
+                
+                <div class="alert alert-warning">
+                    <i class="bi bi-exclamation-triangle"></i> 
+                    <strong>Important:</strong> When our system generates Klipper-specific configurations, you may need to add these to your Klipper configuration files on your SonicPad. The generated profiles will include instructions on how to do this.
+                </div>
+                
+                <h2>Calibrating Your Klipper Setup</h2>
+                <p>For optimal results, we recommend performing these calibrations on your Klipper setup:</p>
+                
+                <ol>
+                    <li><strong>PID tuning</strong> for hotend and bed temperature stability</li>
+                    <li><strong>Pressure advance calibration</strong> for each filament type</li>
+                    <li><strong>Input shaper calibration</strong> to minimize ringing</li>
+                    <li><strong>Flow rate calibration</strong> for accurate extrusion</li>
+                    <li><strong>Z-offset calibration</strong> for perfect first layer adhesion</li>
+                </ol>
+                
+                <p>Our AI will provide better recommendations if you enter these calibrated values when creating printer and material profiles.</p>
+                
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li><a href="https://www.klipper3d.org/Overview.html" target="_blank">Klipper Official Documentation</a></li>
+                    <li><a href="https://github.com/Jpe230/SonicPad-Debian" target="_blank">SonicPad-Debian GitHub Repository</a></li>
+                    <li><a href="https://github.com/SoftFever/OrcaSlicer" target="_blank">Orca Slicer GitHub Repository</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

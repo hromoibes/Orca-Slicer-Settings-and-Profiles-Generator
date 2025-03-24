@@ -1,0 +1,36 @@
+{
+  "name": "Prusa i3 MK3S+",
+  "vendor": "Prusa Research",
+  "model": "i3 MK3S+",
+  "family": "i3",
+  "bed_shape": [
+    [
+      0,
+      0
+    ],
+    [
+      250,
+      0
+    ],
+    [
+      250,
+      210
+    ],
+    [
+      0,
+      210
+    ]
+  ],
+  "bed_size": [
+    250,
+    210
+  ],
+  "max_print_height": 210,
+  "nozzle_diameter": 0.4,
+  "extruders_count": 1,
+  "direct_drive": true,
+  "printer_type": "cartesian",
+  "gcode_flavor": "marlin",
+  "use_klipper": false,
+  "template": true
+}

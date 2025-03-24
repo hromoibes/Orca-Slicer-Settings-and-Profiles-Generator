@@ -1,0 +1,14 @@
+{
+  "name": "Test PLA",
+  "vendor": "Generic",
+  "type": "PLA",
+  "color": "#FFFFFF",
+  "diameter": 1.75,
+  "temp_range_min": 190,
+  "temp_range_max": 220,
+  "bed_temp_range_min": 50,
+  "bed_temp_range_max": 60,
+  "id": "5bc3523a-7aa6-461a-9218-495aece7dfc5",
+  "created": "2025-03-24T12:39:04.015792",
+  "modified": "2025-03-24T12:39:04.015792"
+}

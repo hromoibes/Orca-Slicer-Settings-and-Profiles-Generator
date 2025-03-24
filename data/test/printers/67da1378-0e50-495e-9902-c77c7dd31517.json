@@ -1,0 +1,17 @@
+{
+  "name": "Standard Test Printer",
+  "vendor": "Generic",
+  "model": "Standard",
+  "bed_size": [
+    220,
+    220
+  ],
+  "max_print_height": 250,
+  "nozzle_diameter": 0.4,
+  "direct_drive": true,
+  "printer_type": "cartesian",
+  "use_klipper": false,
+  "id": "67da1378-0e50-495e-9902-c77c7dd31517",
+  "created": "2025-03-24T12:39:04.014977",
+  "modified": "2025-03-24T12:39:04.014977"
+}

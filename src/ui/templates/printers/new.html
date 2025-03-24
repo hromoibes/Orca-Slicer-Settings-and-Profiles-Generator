@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Add Printer - Orca Slicer Settings Generator{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Add Printer Profile</h1>
+        <p class="lead">Create a new 3D printer profile</p>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <form method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="template-select" class="form-label">Start from Template (Optional)</label>
+                        <select id="template-select" class="form-select template-select" data-type="printer">
+                            <option value="">Select a template...</option>
+                            {% for template in templates %}
+                                <option value="{{ template.id }}">{{ template.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <div id="template-loading" class="mt-2 d-none">
+                            <div class="spinner-border spinner-border-sm text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            <span class="ms-2">Loading template data...</span>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4 mb-3">Basic Information</h4>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="name" class="form-label">Printer Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="invalid-feedback">
+                                Please provide a printer name.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="vendor" class="form-label">Vendor</label>
+                            <input type="text" class="form-control" id="vendor" name="vendor" required>
+                            <div class="invalid-feedback">
+                                Please provide a vendor name.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <label for="model" class="form-label">Model</label>
+                            <input type="text" class="form-control" id="model" name="model" required>
+                            <div class="invalid-feedback">
+                                Please provide a model name.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h4 class="mt-4 mb-3">Printer Specifications</h4>
+                    
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="bed_width" class="form-label">Bed Width (mm)</label>
+                            <input type="number" class="form-control" id="bed_width" name="bed_width" min="1" step="1" value="220" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid bed width.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="bed_depth" class="form-label">Bed Depth (mm)</label>
+                            <input type="number" class="form-control" id="bed_depth" name="bed_depth" min="1" step="1" value="220" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid bed depth.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="max_height" class="form-label">Max Height (mm)</label>
+                            <input type="number" class="form-control" id="max_height" name="max_height" min="1" step="1" value="250" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid maximum height.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 mb-3">
+                            <label for="nozzle_diameter" class="form-label">Nozzle Diameter (mm)</label>
+                            <input type="number" class="form-control" id="nozzle_diameter" name="nozzle_diameter" min="0.1" step="0.1" value="0.4" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid nozzle diameter.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="printer_type" class="form-label">Printer Type</label>
+                            <select class="form-select" id="printer_type" name="printer_type" required>
+                                <option value="cartesian">Cartesian</option>
+                                <option value="delta">Delta</option>
+                                <option value="corexy">CoreXY</option>
+                                <option value="corexz">CoreXZ</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a printer type.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="form-check form-switch mt-4">
+                                <input class="form-check-input" type="checkbox" id="is_direct_drive" name="is_direct_drive">
+                                <label class="form-check-label" for="is_direct_drive">Direct Drive Extruder</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-3">
+                            <div class="form-check form-switch mt-4">
+                                <input class="form-check-input" type="checkbox" id="use_klipper" name="use_klipper" checked>
+                                <label class="form-check-label" for="use_klipper">Uses Klipper Firmware</label>
+                                <small class="form-text text-muted d-block">Enable for SonicPad with Debian</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 d-flex justify-content-between">
+                        <a href="{{ url_for('list_printers') }}" class="btn btn-secondary">Cancel</a>
+                        <button type="submit" class="btn btn-primary">Create Printer Profile</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

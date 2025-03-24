@@ -1,0 +1,16 @@
+{
+  "name": "Generic PLA",
+  "vendor": "Generic",
+  "type": "PLA",
+  "color": "#FFFFFF",
+  "diameter": 1.75,
+  "temp_range_min": 190,
+  "temp_range_max": 220,
+  "bed_temp_range_min": 50,
+  "bed_temp_range_max": 60,
+  "template": false,
+  "settings": {},
+  "id": "588649d5-233d-4d62-9762-97e04d2e70b6",
+  "created": "2025-03-24T12:31:07.002183",
+  "modified": "2025-03-24T12:31:07.002183"
+}

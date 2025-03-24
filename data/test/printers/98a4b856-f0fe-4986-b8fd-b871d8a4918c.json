@@ -1,0 +1,17 @@
+{
+  "name": "SonicPad Printer",
+  "vendor": "Creality",
+  "model": "Ender 3 with SonicPad",
+  "bed_size": [
+    220,
+    220
+  ],
+  "max_print_height": 250,
+  "nozzle_diameter": 0.4,
+  "direct_drive": false,
+  "printer_type": "cartesian",
+  "use_klipper": true,
+  "id": "98a4b856-f0fe-4986-b8fd-b871d8a4918c",
+  "created": "2025-03-24T12:37:59.848030",
+  "modified": "2025-03-24T12:37:59.848030"
+}

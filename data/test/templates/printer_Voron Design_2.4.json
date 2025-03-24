@@ -1,0 +1,36 @@
+{
+  "name": "Voron 2.4",
+  "vendor": "Voron Design",
+  "model": "2.4",
+  "family": "Voron",
+  "bed_shape": [
+    [
+      0,
+      0
+    ],
+    [
+      350,
+      0
+    ],
+    [
+      350,
+      350
+    ],
+    [
+      0,
+      350
+    ]
+  ],
+  "bed_size": [
+    350,
+    350
+  ],
+  "max_print_height": 350,
+  "nozzle_diameter": 0.4,
+  "extruders_count": 1,
+  "direct_drive": true,
+  "printer_type": "corexy",
+  "gcode_flavor": "klipper",
+  "use_klipper": true,
+  "template": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Generic PETG",
+  "vendor": "Generic",
+  "type": "PETG",
+  "color": "#00FFFF",
+  "diameter": 1.75,
+  "temp_range_min": 230,
+  "temp_range_max": 250,
+  "bed_temp_range_min": 70,
+  "bed_temp_range_max": 85,
+  "template": false,
+  "settings": {},
+  "id": "2de2ffc8-3c57-4ea9-bb1b-b155a2d1314a",
+  "created": "2025-03-24T12:32:58.767142",
+  "modified": "2025-03-24T12:32:58.767142"
+}

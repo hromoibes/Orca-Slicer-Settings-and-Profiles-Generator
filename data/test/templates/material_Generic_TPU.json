@@ -1,0 +1,13 @@
+{
+  "name": "Generic TPU",
+  "vendor": "Generic",
+  "type": "TPU",
+  "color": "#FFFFFF",
+  "density": 1.21,
+  "diameter": 1.75,
+  "temp_range_min": 220,
+  "temp_range_max": 240,
+  "bed_temp_range_min": 30,
+  "bed_temp_range_max": 50,
+  "template": true
+}

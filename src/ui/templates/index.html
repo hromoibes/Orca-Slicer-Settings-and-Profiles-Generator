@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}Orca Slicer Settings Generator - Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12 text-center mb-4">
+        <h1>Welcome to Orca Slicer Settings Generator</h1>
+        <p class="lead">AI-powered 3D printer settings optimization for Orca Slicer</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0"><i class="bi bi-magic"></i> Get Optimized Settings</h5>
+            </div>
+            <div class="card-body">
+                <p>Let our AI generate optimized print settings for your specific printer and material combination.</p>
+                <p>Our system uses open-source AI to analyze your printer capabilities, material properties, and print requirements to create the perfect profile.</p>
+                <a href="{{ url_for('recommend_settings') }}" class="btn btn-primary">Generate Settings</a>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+                <h5 class="card-title mb-0"><i class="bi bi-printer"></i> Manage Printers</h5>
+            </div>
+            <div class="card-body">
+                <p>Add your 3D printers to the system, including your SonicPad with Klipper firmware.</p>
+                <p>Import existing Orca Slicer printer profiles or create new ones from scratch.</p>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('list_printers') }}" class="btn btn-outline-success">View Printers</a>
+                    <a href="{{ url_for('new_printer') }}" class="btn btn-success">Add Printer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6">
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="card-title mb-0"><i class="bi bi-droplet"></i> Manage Materials</h5>
+            </div>
+            <div class="card-body">
+                <p>Create profiles for your filaments with detailed material properties.</p>
+                <p>Import existing Orca Slicer material profiles or create new ones from scratch.</p>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('list_materials') }}" class="btn btn-outline-info">View Materials</a>
+                    <a href="{{ url_for('new_material') }}" class="btn btn-info">Add Material</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header bg-warning text-dark">
+                <h5 class="card-title mb-0"><i class="bi bi-gear"></i> Process Profiles</h5>
+            </div>
+            <div class="card-body">
+                <p>Generate and manage process profiles that combine printer and material settings.</p>
+                <p>Compare different profiles to understand the impact of settings changes.</p>
+                <div class="d-flex gap-2">
+                    <a href="{{ url_for('list_processes') }}" class="btn btn-outline-warning">View Processes</a>
+                    <a href="{{ url_for('new_process') }}" class="btn btn-warning">Generate Process</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-secondary text-white">
+                <h5 class="card-title mb-0"><i class="bi bi-info-circle"></i> About Orca Slicer Settings Generator</h5>
+            </div>
+            <div class="card-body">
+                <p>This application uses open-source AI to generate optimized 3D printer settings for Orca Slicer. It's specifically designed to work with your SonicPad running Debian and Klipper firmware.</p>
+                
+                <p>Key features:</p>
+                <ul>
+                    <li>AI-powered settings optimization based on printer capabilities and material properties</li>
+                    <li>Special support for Klipper firmware features like pressure advance and input shaping</li>
+                    <li>Comprehensive profile management for printers, materials, and processes</li>
+                    <li>Import and export compatibility with Orca Slicer</li>
+                    <li>Detailed explanations of settings and their impact on print quality</li>
+                </ul>
+                
+                <p>Get started by adding your printer and materials, then generate optimized settings!</p>
+                
+                <a href="{{ url_for('help_index') }}" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

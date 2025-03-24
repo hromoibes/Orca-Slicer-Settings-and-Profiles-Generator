@@ -1,0 +1,13 @@
+{
+  "name": "Generic PETG",
+  "vendor": "Generic",
+  "type": "PETG",
+  "color": "#FFFFFF",
+  "density": 1.27,
+  "diameter": 1.75,
+  "temp_range_min": 230,
+  "temp_range_max": 250,
+  "bed_temp_range_min": 70,
+  "bed_temp_range_max": 85,
+  "template": true
+}

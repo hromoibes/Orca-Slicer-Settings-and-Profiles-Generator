@@ -1,0 +1,36 @@
+{
+  "name": "Generic FDM Printer",
+  "vendor": "Generic",
+  "model": "FDM Printer",
+  "family": "Generic",
+  "bed_shape": [
+    [
+      0,
+      0
+    ],
+    [
+      220,
+      0
+    ],
+    [
+      220,
+      220
+    ],
+    [
+      0,
+      220
+    ]
+  ],
+  "bed_size": [
+    220,
+    220
+  ],
+  "max_print_height": 250,
+  "nozzle_diameter": 0.4,
+  "extruders_count": 1,
+  "direct_drive": false,
+  "printer_type": "cartesian",
+  "gcode_flavor": "marlin",
+  "use_klipper": false,
+  "template": true
+}

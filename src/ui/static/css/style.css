@@ -1,0 +1,214 @@
+/* Main stylesheet for Orca Slicer Settings Generator */
+
+/* Custom variables */
+:root {
+    --orca-primary: #0d6efd;
+    --orca-secondary: #6c757d;
+    --orca-success: #198754;
+    --orca-info: #0dcaf0;
+    --orca-warning: #ffc107;
+    --orca-danger: #dc3545;
+    --orca-light: #f8f9fa;
+    --orca-dark: #212529;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+/* Button styles */
+.btn {
+    border-radius: 0.375rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background-color: var(--orca-primary);
+    border-color: var(--orca-primary);
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Form styles */
+.form-control, .form-select {
+    border-radius: 0.375rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Settings table styles */
+.settings-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.settings-table .setting-name {
+    font-weight: 500;
+}
+
+.settings-table .setting-value {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.settings-table .setting-explanation {
+    font-style: italic;
+    color: #6c757d;
+}
+
+/* Profile card styles */
+.profile-card {
+    border-left: 5px solid var(--orca-primary);
+}
+
+.printer-profile {
+    border-left-color: var(--orca-success);
+}
+
+.material-profile {
+    border-left-color: var(--orca-info);
+}
+
+.process-profile {
+    border-left-color: var(--orca-warning);
+}
+
+/* Help content styles */
+.help-content h2 {
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.help-content h3 {
+    margin-top: 1.5rem;
+    color: var(--orca-primary);
+}
+
+.help-content code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+}
+
+/* Comparison view styles */
+.comparison-diff {
+    background-color: #fff3cd;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.comparison-better {
+    background-color: #d1e7dd;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.comparison-worse {
+    background-color: #f8d7da;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .d-flex.gap-2 {
+        flex-direction: column;
+    }
+}
+
+/* Tooltip styles */
+.tooltip-inner {
+    max-width: 300px;
+    padding: 0.5rem;
+    background-color: var(--orca-dark);
+}
+
+/* Badge styles */
+.badge.bg-klipper {
+    background-color: #ff5722;
+}
+
+/* Loading spinner */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* AI explanation box */
+.ai-explanation {
+    background-color: #e9f7fe;
+    border-left: 4px solid #0dcaf0;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.25rem;
+}
+
+.ai-explanation h5 {
+    color: #0a58ca;
+    margin-bottom: 0.5rem;
+}
+
+/* Klipper specific styles */
+.klipper-config {
+    font-family: monospace;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    border: 1px solid #dee2e6;
+    white-space: pre-wrap;
+}
+
+.klipper-badge {
+    background-color: #ff5722;
+    color: white;
+}

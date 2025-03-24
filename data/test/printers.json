@@ -1,0 +1,298 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2025-03-24T12:40:44.720528",
+  "items": {
+    "7e80c6c9-974a-4ba5-a4db-1529968cf033": {
+      "name": "SonicPad Printer",
+      "vendor": "Creality",
+      "model": "Ender 3 with SonicPad",
+      "bed_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          220,
+          0
+        ],
+        [
+          220,
+          220
+        ],
+        [
+          0,
+          220
+        ]
+      ],
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "extruders_count": 1,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "gcode_flavor": "klipper",
+      "use_klipper": true,
+      "template": false,
+      "settings": {},
+      "id": "7e80c6c9-974a-4ba5-a4db-1529968cf033",
+      "created": "2025-03-24T12:31:07.000907",
+      "modified": "2025-03-24T12:31:07.000907"
+    },
+    "876e101d-3179-4b52-8204-905c495d3a35": {
+      "name": "Standard FDM Printer",
+      "vendor": "Generic",
+      "model": "FDM Printer",
+      "bed_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          200,
+          0
+        ],
+        [
+          200,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "bed_size": [
+        200,
+        200
+      ],
+      "max_print_height": 200,
+      "nozzle_diameter": 0.4,
+      "extruders_count": 1,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "gcode_flavor": "marlin",
+      "use_klipper": false,
+      "template": false,
+      "settings": {},
+      "id": "876e101d-3179-4b52-8204-905c495d3a35",
+      "created": "2025-03-24T12:31:07.001393",
+      "modified": "2025-03-24T12:31:07.001393"
+    },
+    "c30ca006-61c5-44c6-8cfd-56a97af384d2": {
+      "name": "SonicPad Printer",
+      "vendor": "Creality",
+      "model": "Ender 3 with SonicPad",
+      "bed_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          220,
+          0
+        ],
+        [
+          220,
+          220
+        ],
+        [
+          0,
+          220
+        ]
+      ],
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "extruders_count": 1,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "gcode_flavor": "klipper",
+      "use_klipper": true,
+      "template": false,
+      "settings": {},
+      "id": "c30ca006-61c5-44c6-8cfd-56a97af384d2",
+      "created": "2025-03-24T12:32:58.764086",
+      "modified": "2025-03-24T12:32:58.764086"
+    },
+    "6913ed49-895a-4554-a600-e7d276355190": {
+      "name": "Standard FDM Printer",
+      "vendor": "Generic",
+      "model": "FDM Printer",
+      "bed_shape": [
+        [
+          0,
+          0
+        ],
+        [
+          200,
+          0
+        ],
+        [
+          200,
+          200
+        ],
+        [
+          0,
+          200
+        ]
+      ],
+      "bed_size": [
+        200,
+        200
+      ],
+      "max_print_height": 200,
+      "nozzle_diameter": 0.4,
+      "extruders_count": 1,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "gcode_flavor": "marlin",
+      "use_klipper": false,
+      "template": false,
+      "settings": {},
+      "id": "6913ed49-895a-4554-a600-e7d276355190",
+      "created": "2025-03-24T12:32:58.764699",
+      "modified": "2025-03-24T12:32:58.764699"
+    },
+    "fa3c202c-510e-4eff-aa12-c7f8b5bca5a0": {
+      "name": "SonicPad Printer",
+      "vendor": "Creality",
+      "model": "Ender 3 with SonicPad",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "use_klipper": true,
+      "id": "fa3c202c-510e-4eff-aa12-c7f8b5bca5a0",
+      "created": "2025-03-24T12:36:11.663497",
+      "modified": "2025-03-24T12:36:11.663497"
+    },
+    "4b9f169a-428d-4700-a43d-c70b41c61f39": {
+      "name": "Standard FDM Printer",
+      "vendor": "Generic",
+      "model": "FDM Printer",
+      "bed_size": [
+        200,
+        200
+      ],
+      "max_print_height": 200,
+      "nozzle_diameter": 0.4,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "use_klipper": false,
+      "id": "4b9f169a-428d-4700-a43d-c70b41c61f39",
+      "created": "2025-03-24T12:36:11.665266",
+      "modified": "2025-03-24T12:36:11.665266"
+    },
+    "98a4b856-f0fe-4986-b8fd-b871d8a4918c": {
+      "name": "SonicPad Printer",
+      "vendor": "Creality",
+      "model": "Ender 3 with SonicPad",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "use_klipper": true,
+      "id": "98a4b856-f0fe-4986-b8fd-b871d8a4918c",
+      "created": "2025-03-24T12:37:59.848030",
+      "modified": "2025-03-24T12:37:59.848030"
+    },
+    "f8cd5fab-af9c-4a40-aa5d-aae94dfe3b62": {
+      "name": "Standard FDM Printer",
+      "vendor": "Generic",
+      "model": "FDM Printer",
+      "bed_size": [
+        200,
+        200
+      ],
+      "max_print_height": 200,
+      "nozzle_diameter": 0.4,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "use_klipper": false,
+      "id": "f8cd5fab-af9c-4a40-aa5d-aae94dfe3b62",
+      "created": "2025-03-24T12:37:59.848736",
+      "modified": "2025-03-24T12:37:59.848736"
+    },
+    "94627d78-624f-4f98-9c5e-73f25a2d7678": {
+      "name": "SonicPad Test Printer",
+      "vendor": "Creality",
+      "model": "SonicPad",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "use_klipper": true,
+      "id": "94627d78-624f-4f98-9c5e-73f25a2d7678",
+      "created": "2025-03-24T12:39:04.014128",
+      "modified": "2025-03-24T12:39:04.014128"
+    },
+    "67da1378-0e50-495e-9902-c77c7dd31517": {
+      "name": "Standard Test Printer",
+      "vendor": "Generic",
+      "model": "Standard",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "use_klipper": false,
+      "id": "67da1378-0e50-495e-9902-c77c7dd31517",
+      "created": "2025-03-24T12:39:04.014977",
+      "modified": "2025-03-24T12:39:04.014977"
+    },
+    "fe784181-2ebc-4dcf-ac15-990dfcd9ab69": {
+      "name": "SonicPad Test Printer",
+      "vendor": "Creality",
+      "model": "SonicPad",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": false,
+      "printer_type": "cartesian",
+      "use_klipper": true,
+      "id": "fe784181-2ebc-4dcf-ac15-990dfcd9ab69",
+      "created": "2025-03-24T12:40:44.719373",
+      "modified": "2025-03-24T12:40:44.719373"
+    },
+    "b00247f4-756a-429e-bbc9-2ba707737219": {
+      "name": "Standard Test Printer",
+      "vendor": "Generic",
+      "model": "Standard",
+      "bed_size": [
+        220,
+        220
+      ],
+      "max_print_height": 250,
+      "nozzle_diameter": 0.4,
+      "direct_drive": true,
+      "printer_type": "cartesian",
+      "use_klipper": false,
+      "id": "b00247f4-756a-429e-bbc9-2ba707737219",
+      "created": "2025-03-24T12:40:44.720509",
+      "modified": "2025-03-24T12:40:44.720509"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "SonicPad Test Printer",
+  "vendor": "Creality",
+  "model": "SonicPad",
+  "bed_size": [
+    220,
+    220
+  ],
+  "max_print_height": 250,
+  "nozzle_diameter": 0.4,
+  "direct_drive": false,
+  "printer_type": "cartesian",
+  "use_klipper": true,
+  "id": "fe784181-2ebc-4dcf-ac15-990dfcd9ab69",
+  "created": "2025-03-24T12:40:44.719373",
+  "modified": "2025-03-24T12:40:44.719373"
+}

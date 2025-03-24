@@ -1,0 +1,10 @@
+{
+  "name": "Functional",
+  "nozzle_diameter": 0.4,
+  "layer_height": 0.2,
+  "print_speed": 50,
+  "infill_density": 30,
+  "purpose": "functional",
+  "quality_level": "standard",
+  "template": true
+}

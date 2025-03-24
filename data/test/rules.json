@@ -1,0 +1,370 @@
+{
+  "material_rules": {
+    "PLA": {
+      "temperature": {
+        "min": 190,
+        "max": 220,
+        "optimal": 205,
+        "quality_offset": -5,
+        "speed_offset": 10
+      },
+      "bed_temperature": {
+        "min": 50,
+        "max": 60,
+        "optimal": 55
+      },
+      "cooling": {
+        "min": 80,
+        "max": 100,
+        "optimal": 100
+      },
+      "retraction": {
+        "direct_drive": {
+          "distance": 0.8,
+          "speed": 35
+        },
+        "bowden": {
+          "distance": 5.0,
+          "speed": 45
+        }
+      }
+    },
+    "PETG": {
+      "temperature": {
+        "min": 220,
+        "max": 250,
+        "optimal": 235,
+        "quality_offset": -5,
+        "speed_offset": 10
+      },
+      "bed_temperature": {
+        "min": 70,
+        "max": 85,
+        "optimal": 75
+      },
+      "cooling": {
+        "min": 30,
+        "max": 60,
+        "optimal": 50
+      },
+      "retraction": {
+        "direct_drive": {
+          "distance": 1.0,
+          "speed": 30
+        },
+        "bowden": {
+          "distance": 6.0,
+          "speed": 40
+        }
+      }
+    },
+    "ABS": {
+      "temperature": {
+        "min": 230,
+        "max": 260,
+        "optimal": 245,
+        "quality_offset": -5,
+        "speed_offset": 10
+      },
+      "bed_temperature": {
+        "min": 90,
+        "max": 110,
+        "optimal": 100
+      },
+      "cooling": {
+        "min": 0,
+        "max": 30,
+        "optimal": 20
+      },
+      "retraction": {
+        "direct_drive": {
+          "distance": 0.8,
+          "speed": 30
+        },
+        "bowden": {
+          "distance": 5.0,
+          "speed": 40
+        }
+      }
+    },
+    "TPU": {
+      "temperature": {
+        "min": 220,
+        "max": 250,
+        "optimal": 235,
+        "quality_offset": -5,
+        "speed_offset": 10
+      },
+      "bed_temperature": {
+        "min": 30,
+        "max": 50,
+        "optimal": 40
+      },
+      "cooling": {
+        "min": 50,
+        "max": 100,
+        "optimal": 80
+      },
+      "retraction": {
+        "direct_drive": {
+          "distance": 0.5,
+          "speed": 20
+        },
+        "bowden": {
+          "distance": 2.0,
+          "speed": 20
+        }
+      }
+    }
+  },
+  "printer_rules": {
+    "cartesian": {
+      "max_speed": 150,
+      "max_acceleration": 3000,
+      "jerk": 10
+    },
+    "delta": {
+      "max_speed": 200,
+      "max_acceleration": 4000,
+      "jerk": 15
+    },
+    "corexy": {
+      "max_speed": 180,
+      "max_acceleration": 3500,
+      "jerk": 12
+    }
+  },
+  "nozzle_rules": {
+    "0.2": {
+      "min_layer_height": 0.08,
+      "max_layer_height": 0.16,
+      "optimal_layer_height": 0.12,
+      "line_width": 0.22
+    },
+    "0.3": {
+      "min_layer_height": 0.12,
+      "max_layer_height": 0.24,
+      "optimal_layer_height": 0.16,
+      "line_width": 0.33
+    },
+    "0.4": {
+      "min_layer_height": 0.12,
+      "max_layer_height": 0.32,
+      "optimal_layer_height": 0.2,
+      "line_width": 0.44
+    },
+    "0.5": {
+      "min_layer_height": 0.15,
+      "max_layer_height": 0.4,
+      "optimal_layer_height": 0.25,
+      "line_width": 0.55
+    },
+    "0.6": {
+      "min_layer_height": 0.18,
+      "max_layer_height": 0.48,
+      "optimal_layer_height": 0.3,
+      "line_width": 0.66
+    },
+    "0.8": {
+      "min_layer_height": 0.24,
+      "max_layer_height": 0.64,
+      "optimal_layer_height": 0.4,
+      "line_width": 0.88
+    },
+    "1.0": {
+      "min_layer_height": 0.3,
+      "max_layer_height": 0.8,
+      "optimal_layer_height": 0.5,
+      "line_width": 1.1
+    }
+  },
+  "purpose_rules": {
+    "functional": {
+      "wall_line_count": 3,
+      "infill_density": 30,
+      "infill_pattern": "cubic",
+      "top_layers": 5,
+      "bottom_layers": 4
+    },
+    "visual": {
+      "wall_line_count": 2,
+      "infill_density": 15,
+      "infill_pattern": "gyroid",
+      "top_layers": 4,
+      "bottom_layers": 3
+    },
+    "miniature": {
+      "wall_line_count": 2,
+      "infill_density": 10,
+      "infill_pattern": "gyroid",
+      "top_layers": 4,
+      "bottom_layers": 3,
+      "z_hop_enable": true,
+      "support_enable": true,
+      "support_angle": 60
+    },
+    "large": {
+      "wall_line_count": 2,
+      "infill_density": 10,
+      "infill_pattern": "grid",
+      "top_layers": 3,
+      "bottom_layers": 3,
+      "adhesion_type": "brim",
+      "brim_width": 8
+    }
+  },
+  "quality_rules": {
+    "ultra": {
+      "layer_height_factor": 0.25,
+      "speed_factor": 0.7,
+      "outer_wall_speed_factor": 0.5,
+      "ironing_enabled": true
+    },
+    "high": {
+      "layer_height_factor": 0.3,
+      "speed_factor": 0.8,
+      "outer_wall_speed_factor": 0.6,
+      "ironing_enabled": false
+    },
+    "standard": {
+      "layer_height_factor": 0.4,
+      "speed_factor": 1.0,
+      "outer_wall_speed_factor": 0.7,
+      "ironing_enabled": false
+    },
+    "draft": {
+      "layer_height_factor": 0.6,
+      "speed_factor": 1.2,
+      "outer_wall_speed_factor": 0.8,
+      "ironing_enabled": false
+    },
+    "ultra_draft": {
+      "layer_height_factor": 0.75,
+      "speed_factor": 1.5,
+      "outer_wall_speed_factor": 0.9,
+      "ironing_enabled": false
+    }
+  },
+  "speed_rules": {
+    "ultra_slow": {
+      "print_speed": 30,
+      "outer_wall_speed_factor": 0.5,
+      "inner_wall_speed_factor": 0.8,
+      "infill_speed_factor": 1.2,
+      "travel_speed_factor": 1.5
+    },
+    "slow": {
+      "print_speed": 40,
+      "outer_wall_speed_factor": 0.5,
+      "inner_wall_speed_factor": 0.8,
+      "infill_speed_factor": 1.2,
+      "travel_speed_factor": 1.5
+    },
+    "normal": {
+      "print_speed": 50,
+      "outer_wall_speed_factor": 0.5,
+      "inner_wall_speed_factor": 0.8,
+      "infill_speed_factor": 1.2,
+      "travel_speed_factor": 1.5
+    },
+    "fast": {
+      "print_speed": 70,
+      "outer_wall_speed_factor": 0.5,
+      "inner_wall_speed_factor": 0.8,
+      "infill_speed_factor": 1.2,
+      "travel_speed_factor": 1.5
+    },
+    "ultra_fast": {
+      "print_speed": 100,
+      "outer_wall_speed_factor": 0.6,
+      "inner_wall_speed_factor": 0.9,
+      "infill_speed_factor": 1.3,
+      "travel_speed_factor": 1.5
+    }
+  },
+  "strength_rules": {
+    "ultra_strong": {
+      "wall_line_count": 4,
+      "infill_density": 50,
+      "infill_pattern": "cubic",
+      "top_layers_factor": 1.5,
+      "bottom_layers_factor": 1.5
+    },
+    "strong": {
+      "wall_line_count": 3,
+      "infill_density": 30,
+      "infill_pattern": "cubic",
+      "top_layers_factor": 1.2,
+      "bottom_layers_factor": 1.2
+    },
+    "normal": {
+      "wall_line_count": 3,
+      "infill_density": 20,
+      "infill_pattern": "gyroid",
+      "top_layers_factor": 1.0,
+      "bottom_layers_factor": 1.0
+    },
+    "light": {
+      "wall_line_count": 2,
+      "infill_density": 15,
+      "infill_pattern": "gyroid",
+      "top_layers_factor": 0.8,
+      "bottom_layers_factor": 0.8
+    },
+    "ultra_light": {
+      "wall_line_count": 2,
+      "infill_density": 10,
+      "infill_pattern": "grid",
+      "top_layers_factor": 0.7,
+      "bottom_layers_factor": 0.7
+    }
+  },
+  "setting_dependencies": {
+    "layer_height": {
+      "affects": [
+        "initial_layer_height",
+        "top_layers",
+        "bottom_layers"
+      ],
+      "affected_by": [
+        "nozzle_size"
+      ]
+    },
+    "line_width": {
+      "affects": [
+        "wall_thickness"
+      ],
+      "affected_by": [
+        "nozzle_size"
+      ]
+    },
+    "wall_line_count": {
+      "affects": [
+        "wall_thickness"
+      ],
+      "affected_by": [
+        "strength_importance"
+      ]
+    },
+    "print_speed": {
+      "affects": [
+        "outer_wall_speed",
+        "inner_wall_speed",
+        "infill_speed"
+      ],
+      "affected_by": [
+        "quality_importance",
+        "speed_importance"
+      ]
+    },
+    "material_print_temperature": {
+      "affects": [
+        "cooling"
+      ],
+      "affected_by": [
+        "material_type",
+        "print_speed"
+      ]
+    }
+  }
+}
